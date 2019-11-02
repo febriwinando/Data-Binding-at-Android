@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="user"
+            type="com.example.recyclerviewdatawithdatabinding.User" />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rootView"
+        android:layout_margin="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_width="1dp"
+            android:layout_marginLeft="15dp"
+            app:civ_border_color="@color/colorAccent"
+            android:id="@+id/profile_picture"
+            android:imageUrl="@{user.imgId}"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_margin="15dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/profile_name"
+                android:layout_alignParentTop="true"
+                android:text="@{user.name}"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/profile_name"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="2dp"
+                android:text="@{user.email}"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

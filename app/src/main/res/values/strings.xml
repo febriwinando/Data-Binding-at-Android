@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RecyclerViewDataWithDataBinding</string>
+    <string-array name="names">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+    </string-array>
+    <string-array name="rmail">
+        <item>a@mail.com</item>
+        <item>b@mail.com</item>
+        <item>c@mail.com</item>
+        <item>d@mail.com</item>
+        <item>e@mail.com</item>
+        <item>f@mail.com</item>
+        <item>g@mail.com</item>
+        <item>h@mail.com</item>
+        <item>i@mail.com</item>
+    </string-array>
+</resources>
